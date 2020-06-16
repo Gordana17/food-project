@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</head>
+<body>
+<header class="head-holder">
+    <nav>
+        <div class="content-holder">
+            <div class="logo-holder">
+                <img src="img/logo.png" alt="FoodBlogger" class="logo">
+            </div>
+            <div class="menu-holder">
+                <img class="search" src="img/menu.png" onclick="mobileMenu()">
+                <img class="close" src="img/close.png" onclick="closeMenu()">
+            </div>
+            <ul class="main-nav">
+                <li class="trigger" id="homeSection"><a class="menu-icon" href="#home">Home</a></li>
+                <li class="trigger" id="chefSection"><a class="menu-icon" href="#">Chef inspiration</a></li>
+                <li class="trigger" id="recipesSection"><a class="menu-icon" href="#">Recipes</a></li>
+                <li class="trigger" id="contactSection"><a class="menu-icon" href="#">Contact</a></li>
+                <li class="trigger"><a> <img class="search-icon" src="img/search-icon.png"/></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="content-holder" id="homeSection1">
+        <div class="header-section">
+            <div class="text-box">
+                <h1>It's time for<br>Cooking!</h1>
+                <p>Do you want to get something delicious,special<br>and healthy?We are sincelery for your service.<br>Welcome your arrival!</p>
+                <div class="btn-full">
+                    <button>Go to recipes</button>
+                </div>
+            </div>
+        </div>
+        <div class="illustation">
+            <img src="img/illustration.png" alt="illustration">
+        </div>
+        <div class="clear-height"></div>
+    </div>
+</header>
+<section class="greyBcg">
+    <section class="content-holder">
+        <div class="chef-section" id="chefSection1">
+            <h1 class="headline">We offer you Best & Delicious food</h1>
+            <p class="title">Creative social proof finders paradigm shift strategy innovator</p>
+            <div class="offer">
+                <div class="tab">
+                    <button class="tablinks" onclick="chooseFood(event, 'Breakfast')">1. Breakfast</button>
+                    <button class="tablinks" onclick="chooseFood(event, 'Lunch')">2. Lunch</button>
+                    <button class="tablinks" onclick="chooseFood(event, 'Dinner')">3. Dinner</button>
+                </div>
+                <div id="Breakfast" class="tabcontent">
+                    <div class="dinner-desc" >
+                        <h1>Our best<br>Breakfast recipes</h1>
+                        <p class="breakfast-p">Breakfast is the most important meal of the day; choose from homemade waffles, granola, corned beef hash, pancakes, omelets or cinnamon buns.</p>
+                        <p class="breakfast-p">Jump start your day with these top-rated breakfast recipes. Whether it’s something savory or a little sweet, we’ve got you covered with this nourishing round up.</p>
+                        <div class="recept-btn">
+                            <button>Go to recipes</button>
+                        </div>
+                    </div>
+                    <div  class="dinner-right">
+                        <img src="img/illustration2.png" alt="illustration" />
+                    </div>
+                    <div class="clear-height"></div>
+                </div>
+
+                <div id="Lunch" class="tabcontent">
+                    <div class="dinner-desc">
+                        <h1>Our best<br> Lunch recipes</h1>
+                        <p>You have breakfast planned the night before, and your shopping for dinner
+                            was already done over the weekend. But what do you do in-between the two?
+                            Don't worry, we've got plenty of lunch ideas to get you inspired.
+                        </p>
+                        <p>With a wide range of lunch ideas like hearty soups, BBQ beef sandwiches,
+                            and adventurous tacos, you're sure to start feeling the creativity flowing.
+                            Put some pizzazz in your midday munch with these delightful lunch ideas.
+                        </p>
+                        <div class="recept-btn">
+                            <button>Go to recipes</button>
+                        </div>
+                    </div>
+                    <div  class="dinner-right">
+                        <img src="img/illustration3.png" alt="illustration" />
+                    </div>
+                    <div class="clear-height"></div>
+                </div>
+
+                <div id="Dinner" class="tabcontent">
+                    <div class="dinner-desc">
+                        <h1>Our best<br> Dinner recipes</h1>
+                        <p>Discover dinner recipes in almost every category imaginable. You can choose from chicken recipes,
+                            casserole recipes, veggie side dishes, salads and oh-so-many more delectable dinner recipes.
+                        </p>
+                        <p>Take the opportunity to expand your repertoire with this collection
+                            of great dinner recipes, from fast and simple to Healthy Living, entertaining
+                            ideas or cheesy comfort foods. No matter which dinner recipes you are searching for
+                        </p>
+                        <div class="recept-btn">
+                            <button>Go to recipes</button>
+                        </div>
+                    </div>
+                    <div  class="dinner-right">
+                        <img src="img/illustration4.png" alt="illustration" />
+                    </div>
+                    <div class="clear-height"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section>
+    <div class="content-holder">
+        <div class="user-container">
+            <h1 class="headline"> What Our Users Say </h1>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <div class="tabs-hold">
+                        <div class="user-holder" >
+                            <img src="img/user.png"/>
+                            <div class="user-desc">
+                                <p class="username">Carrie Gordon</p>
+                                <p class="city">NOVI SAD, SERBIA</p>
+                            </div>
+                        </div>
+                        <div class="dec-content">
+                            <p class="dec-p">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="tabs-hold">
+                        <div class="user-holder" >
+                            <img src="img/user.png"/>
+                            <div class="user-desc">
+                                <p class="username">Lara Atkinson</p>
+                                <p class="city">BEOGRAD, SERBIA</p>
+                            </div>
+                        </div>
+                        <div class="dec-content">
+                            <p class="dec-p">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="tabs-hold">
+                        <div class="user-holder" >
+                            <img src="img/user.png"/>
+                            <div class="user-desc">
+                                <p class="username">ANNA ITURBE</p>
+                                <p class="city">NOVI SAD, SERBIA</p>
+                            </div>
+                        </div>
+                        <div class="dec-content">
+                            <p class="dec-p">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="tabs-hold">
+                        <div class="user-holder" >
+                            <img src="img/user.png"/>
+                            <div class="user-desc">
+                                <p class="username">Amelia Pulen</p>
+                                <p class="city">NOVI SAD, SERBIA</p>
+                            </div>
+                        </div>
+                        <div class="dec-content">
+                            <p class="dec-p">"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed d"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-height"></div>
+
+                <img src="img/left-arrow.png" class="prev" onclick="plusSlides(-1)"/>
+                <img src="img/right-arrow.png" class="next" onclick="plusSlides(1)"/>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="greyBcg">
+    <section  class="content-holder">
+        <div class="our-latest" id="recipesSection1">
+            <h1 class="headline"> Our latest recipes </h1>
+            <div class="show-all-holder">
+                <p>Show all recipes</p>
+            </div>
+            <div class="clear-height"></div>
+            <div class="latest-recipes">
+                <div class="recipe">
+                    <img src="img/recipe1.png">
+                </div>
+                <div class="recipe-desc-holder">
+                    <div class="desc-snacks">
+                        <p class="food"> SNACKS</p>
+                        <p class="species-food">Spanish Tortila</p>
+                        <div class="icon-holder">
+                            <img src="img/clock-icon.png">
+                            <p>20 - 30 min</p>
+                        </div>
+                        <div class="icon-holder-right">
+                            <p>12</p>
+                            <img src="img/comment-icon.png">
+                        </div>
+                        <div class="clear-height"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-recipes">
+                <div class="trending">
+                    <span>TRENDING</span>
+                    <img src="img/recipe2.png">
+                </div>
+                <div class="recipe-desc-holder">
+                    <div class="desc-snacks">
+                        <p class="food"> SNACKS</p>
+                        <p class="species-food">Healthy oaty fruity cereal</p>
+                        <div class="icon-holder">
+                            <img src="img/clock-icon.png">
+                            <p>20 - 30 min</p>
+                        </div>
+                        <div class="icon-holder-right">
+                            <p>12</p>
+                            <img src="img/comment-icon.png">
+                        </div>
+                        <div class="clear-height"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-recipes">
+                <div class="recipe">
+                    <img src="img/recipe3.png">
+                </div>
+                <div class="recipe-desc-holder">
+                    <div class="desc-snacks">
+                        <p class="food"> SNACKS</p>
+                        <p class="species-food">Cheat's cranbbery sauce</p>
+                        <div class="icon-holder">
+                            <img src="img/clock-icon.png">
+                            <p>20 - 30 min</p>
+                        </div>
+                        <div class="icon-holder-right">
+                            <p>12</p>
+                            <img src="img/comment-icon.png">
+                        </div>
+                        <div class="clear-height"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-recipes">
+                <div class="recipe">
+                    <img src="img/recipe1.png">
+                </div>
+                <div class="recipe-desc-holder">
+                    <div class="desc-snacks">
+                        <p class="food"> SNACKS</p>
+                        <p class="species-food">Spanish Tortila</p>
+                        <div class="icon-holder">
+                            <img src="img/clock-icon.png">
+                            <p>20 - 30 min</p>
+                        </div>
+                        <div class="icon-holder-right">
+                            <p>12</p>
+                            <img src="img/comment-icon.png">
+                        </div>
+                        <div class="clear-height"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="content-holder">
+    <div class="recipe-holder">
+        <span>POPULAR THIS WEEK</span>
+        <div class="serve">
+            <h1 class="recipe-headline"> Hummus with Spiced Summer <br>Squash and Lamb </h1>
+            <p class="desc">If you’re making this hummus recipe for a finicky crowd, serve </p>
+        </div>
+        <div>
+            <div class="rec-content-right">
+                <p class="desc-head">Hummus</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+            </div>
+            <div class="content-left">
+                <p class="desc-head">Ingridients</p>
+                <p class="rec-description"><b>Lamb & Assembly</b></p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <p  class="rec-description"> -  2 tsp. kosher salt   -  1½ tsp. ground cor</p>
+                <div class="btn-holder">
+                    <button>Read full recipe</button>
+                </div>
+            </div>
+            <div class="clear-height"></div>
+        </div>
+    </div>
+    <div class="recipe-img">
+        <img src="img/recipe6.png">
+    </div>
+    <div class="clear-height"></div>
+</section>
+<section class="content-holder">
+    <div class="partner-holder" >
+        <div class="partner-desc">
+            <img src="img/partners1.png" >
+        </div>
+        <div class="partner-desc">
+            <img src="img/partners2.png" >
+        </div>
+        <div class="partner-desc">
+            <img src="img/partners3.png" >
+        </div>
+        <div class="partner-desc">
+            <img src="img/partners4.png" >
+        </div>
+        <div class="partner-desc">
+            <img src="img/partners5.png" >
+        </div>
+    </div>
+</section>
+<section class="subscribe-holder">
+    <div class="sub">
+        <h1> Subscribe to our Newsletters</h1>
+        <div>
+            <div class="sub-holder-left">
+                <input placeholder="Email address"/>
+            </div>
+            <div class="sub-holder-right" >
+                <button >Subscribe</button>
+            </div>
+            <p>We will not share your informations with anyone</p>
+        </div>
+        <div class="clear-height"></div>
+    </div>
+</section>
+
+
+<footer class="footer-holder">
+    <div class="content-holder" id="contactSection1">
+        <div class="footer-left">
+            <img src="img/logo.png"><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua.</p>
+            <a href="tel:(+61) 979 185 942"> T: (+61) 979 185 942 </a>
+            <a href = "mailto: contact@foodblogger.com"> E: contact@foodblogger.com </a>
+        </div>
+        <div class="footer-center">
+            <h2><b>Usefull Links</b></h2>
+            <ul class="footer-nav">
+                <li><a href="#">Home</a><li><br>
+                <li><a href="#">Chef inspiration</a></li><br>
+                <li><a href="#">Recipes</a></li><br>
+                <li><a href="#">Contact</a></li><br>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h2><b>Popular Recipes</b></h2>
+            <p>Beef Medalio</p>
+            <p>Penne Arrabiata</p>
+            <p>Sweet & Chicken</p>
+            <p>Thai Chicken Curry</p>
+            <p>Fish Curry</p>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
